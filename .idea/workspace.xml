@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c325d660-7c8e-4450-aa2f-8556ee09a3d0" name="Changes" comment="ComparatorComparable">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Coins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/NominalValueComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Documentation" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/MintYearComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/DividedByZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/InvalidPriceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/TestGenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericType/TestGenericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Documentation" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Documentation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main">
+}</component>
+  <component name="RunManager" selected="JUnit.TestCalculator">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ComparatorComparable.Main" />
       <module name="LearningJavaAdvance" />
@@ -93,8 +98,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LearningJavaAdvance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculator" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCalculator.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LearningJavaAdvance" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCalculator" />
+      <option name="METHOD_NAME" value="testAddition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCalculator" />
+        <item itemvalue="JUnit.TestCalculator.testAddition" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestCollections" />
         <item itemvalue="Application.TestGenericType" />
@@ -109,7 +135,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660712857905</updated>
-      <workItem from="1660712860395" duration="19294000" />
+      <workItem from="1660712860395" duration="19966000" />
+      <workItem from="1660810628065" duration="5070000" />
+      <workItem from="1660827437091" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="generic types">
       <created>1660713930427</created>
@@ -118,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660713930427</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ComparatorComparable">
+      <created>1660765789528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660765789528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

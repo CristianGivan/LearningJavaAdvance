@@ -7,4 +7,9 @@ public class SimpleClass {
         }
     }
 
+    public <TT> void printTTArray(TT[] array){
+        for (int i=0; i< array.length; i++){
+            System.out.println(array[i]);
+        }
+    }
 }

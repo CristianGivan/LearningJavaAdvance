@@ -56,6 +56,8 @@ public class Main {
         System.out.println(coins);
         coins.sort(new NominalValueComparator());
         System.out.println(coins);
+        coins.sort(new MintYearComparator());
+        System.out.println(coins);
     }
 
 
