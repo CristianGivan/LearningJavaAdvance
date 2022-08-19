@@ -1,4 +1,4 @@
-package ComparatorComparable;
+package Lessons.ComparatorComparable;
 
 public class Coins implements Comparable<Coins>{
 

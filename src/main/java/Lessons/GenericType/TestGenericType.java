@@ -1,4 +1,4 @@
-package GenericType;
+package Lessons.GenericType;
 
 public class TestGenericType {
     public static void main(String[] args) {

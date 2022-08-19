@@ -1,4 +1,4 @@
-package ComparatorComparable;
+package Lessons.ComparatorComparable;
 
 public class Car implements Comparable<Car>{
     private int price;

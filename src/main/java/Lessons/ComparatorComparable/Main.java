@@ -1,9 +1,6 @@
-package ComparatorComparable;
-
-import com.sun.tools.jconsole.JConsoleContext;
+package Lessons.ComparatorComparable;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package Colections;
+package Lessons.Colections;
 
 import java.util.*;
 

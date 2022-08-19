@@ -1,4 +1,4 @@
-package GenericType;
+package Lessons.GenericType;
 
 public class SimpleClass {
     public  <T> void printArray(T[] array){

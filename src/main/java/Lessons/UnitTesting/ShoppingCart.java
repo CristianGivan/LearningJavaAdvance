@@ -1,9 +1,12 @@
-package UnitTesting;
+package Lessons.UnitTesting;
 
 public class ShoppingCart {
     private Product[] productList;
 
-    //getters, setters
+    public ShoppingCart(Product[] productList) {
+        this.productList = productList;
+    }
+//getters, setters
 
     public double computeTotalPrice() throws InvalidPriceException {
         double total = 0;

@@ -1,4 +1,4 @@
-package UnitTesting;
+package Lessons.UnitTesting;
 
 public class DividedByZero extends Exception{
     public DividedByZero(String message){

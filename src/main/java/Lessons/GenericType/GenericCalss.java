@@ -1,4 +1,4 @@
-package GenericType;
+package Lessons.GenericType;
 
 public class GenericCalss <T>{
     private T t;

@@ -1,4 +1,6 @@
 +Neclar
 - poate sa explic un pic Set<Map.Entry<K, V>> entrySet()
 - cum comparam stringuri?
-- de ce nu merge BeforeEach?
+- cum testez o lista?
+- cum facem testarea pentru situatiile ne asteptam sa primim informatii diferite
+ de la utilizator

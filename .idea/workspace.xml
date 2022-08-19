@@ -4,22 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c325d660-7c8e-4450-aa2f-8556ee09a3d0" name="Changes" comment="ComparatorComparable">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/MintYearComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/DividedByZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/InvalidPriceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UnitTesting/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+    <list default="true" id="c325d660-7c8e-4450-aa2f-8556ee09a3d0" name="Changes" comment="Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/PhoneBook/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/PhoneBook/PhoneBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/ShortExcercise/CountWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/ShortExcercise/LongestWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/ShortExcercise/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/ShortExcercise/SuperSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/SpellChecker/Doc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Exercise/SpellChecker/SpellChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exercise/SquareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exercise/TesLongestWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exercise/TestCountWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Exercise/TestSuperSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lessons/TestUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Colections/TestCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/Colections/TestCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/ComparatorComparable/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Coins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/ComparatorComparable/Coins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/ComparatorComparable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/MintYearComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/ComparatorComparable/MintYearComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ComparatorComparable/NominalValueComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/ComparatorComparable/NominalValueComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Documentation" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Documentation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/GenericCalss.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/GenericType/GenericCalss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/SimpleClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/GenericType/SimpleClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GenericType/TestGenericType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/GenericType/TestGenericType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/DividedByZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/DividedByZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/InvalidPriceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/InvalidPriceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UnitTesting/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lessons/UnitTesting/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lessons/TestCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +73,26 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestCalculator">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ComparatorComparable.Main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\crist_7j0v53l\OneDrive\Java\Curs_JustCodeIT_2022\LearningJavaAdvance\src\main\java" />
+      <recent name="C:\Users\crist_7j0v53l\OneDrive\Java\Curs_JustCodeIT_2022\LearningJavaAdvance\src\main\java\Lessons" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Lessons" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SpellChecker">
+    <configuration name="SpellChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercise.SpellChecker.SpellChecker" />
       <module name="LearningJavaAdvance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ComparatorComparable.*" />
+          <option name="PATTERN" value="Exercise.SpellChecker.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,58 +100,74 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Colections.TestCollections" />
+    <configuration name="TesLongestWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LearningJavaAdvance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Colections.*" />
+          <option name="PATTERN" value="Exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestGenericType" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GenericType.TestGenericType" />
-      <module name="LearningJavaAdvance" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GenericType.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LearningJavaAdvance" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCalculator" />
+      <option name="PACKAGE_NAME" value="Exercise" />
+      <option name="MAIN_CLASS_NAME" value="Exercise.TesLongestWord" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCalculator.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TesLongestWord.testLongestWord_ShouldReturnTheLongestWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LearningJavaAdvance" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCalculator" />
-      <option name="METHOD_NAME" value="testAddition" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exercise" />
+      <option name="MAIN_CLASS_NAME" value="Exercise.TesLongestWord" />
+      <option name="METHOD_NAME" value="testLongestWord_ShouldReturnTheLongestWord" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCountWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LearningJavaAdvance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exercise" />
+      <option name="MAIN_CLASS_NAME" value="Exercise.TestCountWords" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuperSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LearningJavaAdvance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Exercise" />
+      <option name="MAIN_CLASS_NAME" value="Exercise.TestSuperSet" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCalculator" />
-        <item itemvalue="JUnit.TestCalculator.testAddition" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TestCollections" />
-        <item itemvalue="Application.TestGenericType" />
+        <item itemvalue="Application.SpellChecker" />
+        <item itemvalue="JUnit.TestCountWords" />
+        <item itemvalue="JUnit.TestSuperSet" />
+        <item itemvalue="JUnit.TesLongestWord.testLongestWord_ShouldReturnTheLongestWord" />
+        <item itemvalue="JUnit.TesLongestWord" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +181,10 @@
       <updated>1660712857905</updated>
       <workItem from="1660712860395" duration="19966000" />
       <workItem from="1660810628065" duration="5070000" />
-      <workItem from="1660827437091" duration="2537000" />
+      <workItem from="1660827437091" duration="2891000" />
+      <workItem from="1660830363765" duration="43000" />
+      <workItem from="1660830422241" duration="4738000" />
+      <workItem from="1660894625572" duration="20956000" />
     </task>
     <task id="LOCAL-00001" summary="generic types">
       <created>1660713930427</created>
@@ -153,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660765789528</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tests">
+      <created>1660830275766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660830275767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +227,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="generic types" />
     <MESSAGE value="ComparatorComparable" />
-    <option name="LAST_COMMIT_MESSAGE" value="ComparatorComparable" />
+    <MESSAGE value="Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Lessons/TestUnit.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Exercise/ShortExcercise/CountWords.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
