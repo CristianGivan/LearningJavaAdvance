@@ -4,3 +4,6 @@
 - cum testez o lista?
 - cum facem testarea pentru situatiile ne asteptam sa primim informatii diferite
  de la utilizator
+- GenerateDeck() nu este de fapt constructorul
+-----------------
+cum ar trebui sa facem cand testam o metoda care implica mai multe date de intrare

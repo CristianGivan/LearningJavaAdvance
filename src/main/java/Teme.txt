@@ -1,0 +1,578 @@
+Sesiunea 4: 12.07
+1. Creeaza o aplicatie care sa modeleze in cod forme geometrice si operatiile cu ele. Nivel usor
+Creeaza o interfata Shape
+ metode: computeArea() - tipul returnat este double si nu primeste niciun parametru
+Creeaza o clasa Circle care implementeaza interfata Shape
+atribute:
+radius (raza cercului)
+metode:
+computeArea()
+Creeaza o clasa Rectangle care implementeaza interfata SHapte
+atribute
+height (lungime)
+width (latime)
+metode:
+computeArea()
+Creeaza o clasa Canvas, in care sa ai o metoda main unde vei testa calculul ariei atat pentru cercuri cat si pentru dreptunghiuri
+
+
+     2.     Creeaza o aplicatie care sa simuleze o scoala
+Creeaza o clasa Person, care sa fie abstracta. Nivel usor
+atribute
+firstName
+lastName
+metode: introduce() (care sa fie metoda abstracta)
+Creeaza o clasa Teacher, care sa extinda Person
+atribute
+department
+subject (adica ce preda profesorul)
+metode:
+introduce()
+implementeaza metoda abstracta din subclasa si afiseaza un mesaj.
+ex: “I am John Decker, I teach Math and I am a teacher”
+Creeaza o clasa Student, care sa extinda Person
+atribute
+groupClass (adica clasa in care este studentul)
+metode:
+introduce()
+implementeaza metoda abstracta din subclasa si afiseaza un mesaj.
+ex: “I am Dave Brown, I am in 12A class and I am a student”
+
+       3.    Creeaza o aplicatie care sa simuleze un adapost de animale. Nivel mediu
+Creeaza clasa Animal
+atribute:
+name
+age
+metode
+metoda abstracta makeSound().
+Creeaza clasa Cat, care extinde Animal
+atribute: niciun atribut nou
+metoda makeSound().
+va afisa un mesaj ca de exemplu: “Pisica Tom face miau”
+Creeaza clasa Dog, care extinde Animal
+atribute: niciun atribut nou
+metoda makeSound()
+va afisa un mesaj ca de exemplu: “Cainele Azor latra”
+Creeaza o clasa Shelter,
+atribute:
+animals (adica o lista de animale)
+metode:
+makeNoise()
+aceasta metoda va face ca toate animalele din lista sa scoata sunet
+addAnimal().
+aceasta metoda va adauga un animal in lista de animale
+main()
+in aceasta metoda se vor adauga animale in lista folosind metoda addAnimal(), iar mai apoi se va apela metoda makeNoise() pentru ca fiecare animal din lista sa faca sunetul corespuzator (de caine sau de pisica, dupa caz)
+
+
+4. Creeaza o aplicatie de gestiune a conturilor deschide la o banca pentru un client. Nivel mediu - avansat
+Creeaza o clasa abstracta numita BankAccount
+atribute:
+balance (cati bani se afla in cont, o valoare de tip double care semnifica suma in lei)
+accountNumber
+metode: (va trebui sa iti dai seama ce returneaza si ce parametrii primeste fiecare metoda)
+withdraw() - metoda abstracta
+deposit() - metoda abstracta
+Creeaza o clasa numita StudentAccount, care sa extinda BankAccount.
+atribute:
+maxDepositAmount
+va trebui sa nu isi schimbe valoarea o data ce a fost initializata
+metode: (va trebui sa iti dai seama ce returneaza si ce parametrii primeste fiecare metoda)
+withdraw()
+se pot retrage maxim cati bani sunt in cont in momentul retragerii
+deposit()
+se pot depune maxim “maxDepositAmount” bani o data
+Creeaza o clasa numita SpendingAccount, care sa extina BankAccount
+atribute:
+maxWithdrawalAmount
+poate sa isi schimbe valoarea o data ce a fost initializata
+metode: (va trebui sa iti dai seama ce returneaza si ce parametrii primeste fiecare metoda)
+withdraw()
+se pot retrage cu maxim “maxWithdrawalAmount” RON mai mult decat exista in cont in momentul retragerii
+ex: daca in cont sunt 5000 de RON, iar maxWithdrawalAmount este 2000 RON, se pot retrage maxim 7000 RON
+deposit()
+oricati bani se pot depune in cont
+Creeaza o clasa Person
+atribute:
+firstName
+lastName
+accountList
+adica un array care tine lista de conturi ale unei persoane
+metode (va trebui sa iti dai seama ce returneaza si ce parametrii primeste fiecare metoda)
+addAccount()
+va da posibilitatea persoanei sa adauge un cont in lista de conturi
+listAccounts()
+va printa accountNumber impreuna cu balance pentru fiecare cont din lista
+deposit()
+va adauga o anumita suma de bani intr-un cont
+withdraw()
+va retrage o anumita suma de bani dintr-un cont
+checkAccountDetails()
+va printa toate detaliile unui anumit cont
+main()
+Creeaza o clasa BankingApp
+clasa va avea doar metoda main(), unde se va instantia o persoana si se vor testa metodele pe care le poate face persoana (adaugare cont, deposit, etc.)
+
+
+Sesiunea 5: 16.07
+1. Creeaza o aplicatie de plati pentru un magazin online - nivel avansat
+
+Creeaza o interfata Payable
+metode
+pay(), care primeste ca parametru o valoare de tip double (suma platita)
+Creeaza clasa Card
+atribute:
+isActive
+PIN
+cardNumber
+cardHolderName
+cardBalance
+changePin() - schimba valoarea PIN-ului, dar doar daca aceasta este o valoare formata din 4 cifre
+freezeCard() - face ca cardul sa fie inactiv
+Creeaza clasa DebitCard , care va extinde Card si va implementa interfata Payable
+atribute:
+maxTransactionAmount
+metode:
+pay() - nu se va putea plati mai mult decat maxTransactionAmount
+changeTransactionLimit() - va da o noua valoare atributului maxTransactionAmount
+Creeaza clasa CreditCard , care va extinde Card si va implementa interfata Payable
+atribute:
+maxOverDraft - nu se va putea schimba valoarea acestui atribut
+Metode:
+pay() - nu se va putea plati mai mult decat cardBalance + maxOverDraft
+Creeaza clasa Address:
+atribute:
+street
+number
+city
+metode: doar getteri si setteri
+Creeaza clasa ShoppingAccount
+atributele:
+cardList - o lista de carduri
+addressList - o lista de adrese
+firstName
+lastName
+currentPaymentMethod  - poate fi de fapt un CreditCard sau un DebitCard
+currentBillingAddress
+metode
+addPaymentMethod()
+addAddress()
+removePaymentMethod()
+removeAdress()
+selectPaymentMethod(String cardNumber) - seteaza currentPaymentMethod in functie de numarul de card primit ca si parametru
+selectAdress(String street) - seteaza currentBillingAddress in functie de strada primita ca si parametru
+generateInvoice(amount, adress, card)
+se va printa un mesaj in functie de suma, cardul si adresa cu care a fost facuta tranzactia
+de exemplu: “Nume: Olimpiu Stefan. Ati platit suma 2300 RON folosind cardul cu numarul 1234 1234 1234 1234 pentru adresa: str. Republicii, nr. 12, Cluj-Napoca”
+Clasa Shop va avea o metoda main unde vor fi testate functionalitatile implementate (se va crea un shopping account, se vor adauga adrese si modalitati de plata in el, se va selecta o adresa, se va selecta o modalitate de plata, se va plati o anumita suma de bani folosind metoda de plata selectata si apoi se va genera o factura)
+
+
+Sesiunea 6: 19.07
+1. Creeaza o aplicatie cu animale pentru a exersa principiile OOP, printre care si overloading-ul - nivel usor
+Creeaza clasa abstracta Animal
+Atribute:
+Name
+Metode:
+greets() - metoda abstracta
+Creeaza clasa Cat care extinde Animal
+Metode
+greets() - printeaza “miau”
+Creeaza clasa Dog, care extinde Animal
+Metode:
+greets() - printeaza “woof”
+greets(Dog anotherDog) - printeaza “woof woof”
+Creeaza clasa SecurityDog, care extinde Dog
+Metode:
+greets() - printeaza “woow”
+greets(Dog anotherDog) - printeaza “woow woow”
+
+
+2. Creeaza o aplicatie de gestiune a unei biblioteci - nivel avansat
+
+Enunt non-tehnic:
+Clientul tau este o biblioteca care are nevoie de un sistem de gestiune.
+Exista doua tipuri de utilizatori: admin(sau bibliotecar) si client (adica cel care imprumuta carti)
+Ca si admin, am nevoie sa:
+Adaug o noua carte in sistem (adica in biblioteca)
+Sa sterg o noua carte din sistem cu totul
+Sa sterg o copie a unei carti din sistem
+Sa vad detaliile tututor cartilor din sistem
+Sa caut o carte in sistem dupa codul ISBN si sa ii vad detaliile (inclusiv cate copii exista in total si cate sunt imprumutate)
+Sa vad toate cartile imprumutate de un anumit client
+Ca si client, am nevoie sa:
+Vad o lista cu toate cartile disponibile pentru imprumut
+Caut o carte in biblioteca si sa vad daca este disponibila
+Imprumut o carte
+Returnez o carte
+
+O carte din biblioteca are titlu, autor, cod ISBN. In plus, mai trebuie sa stim pentru fiecare carte cate copii exista in total si cate sunt imprumutate. Iar utilizatorii au doar nume.
+
+
+Enuntul tehnic:
+
+
+Creeaza clasa Book
+Atribute
+Title
+Author
+ISBNCode
+totalNumberOfCopies
+borrowedNumberOfCopies
+Metode
+Doar getteri si setteri
+Creeaza clasa Library
+Atribute
+booksList - o lista cu cartile din biblioteca
+Creeaza clasa User, care va reprezenta un utilizator al aplicatiei de gestiune
+Atribute
+Nume
+Creeaza clasa Client, care extinde User
+Atribute
+borrowedBooksCodes - lista ISBNCode-urilor cartilor imprumutate de client
+Metode
+isBookAvailable()
+Va cauta o carte in biblioteca dupa ISBNCode si va afisa daca este sau nu disponibila pentru imprumut
+viewAvailableBooks()
+va afisa in consola toate cartile disponibile din biblioteca (adica cartile care au borrowedNumberOfBooks mai mic de cat totalNumberOfBooks)
+borrowBook()
+va imprumuta o carte din biblioteca dupa ISBNCode, ceea ceva avea doua efecte:
+Codul cartii imprumutate va fi adaugat in lista de coduri a clientului
+In acelasi timp, cartii cu acelasi ISBNCode din lista de carti din librarie ii va fi incrementat atributul borrowedNumberOfCopies cu 1.
+Atentie! Operatia de imprumutare nu va fi posibila pentru o carte daca borrowedNumberOfCopies este egal cu totalNumberOfCopies
+returnBook()
+va returna o carte in biblioteca dupa ISBNCode, ceea ce va avea doua efecte:
+Codul ISBNCode va disparea din lista de coduri ale clientului.
+In acelasi timp, cartii cu acel ISBNCode din lista de carti a bibliotecii ii va fi decrementat atributul borrowedNumberOfCopies cu 1.
+Atentie: toate metodele vor trebui sa primeasca ca parametru in plus o biblioteca
+Creeaza clasa Admin, care extinde User
+Atribute
+Metode
+addBook()
+va adauga o carte in lista de carti a bilbiotecii. Daca cartea cu acel ISBNCode exista deja in lista de carti a bibliotecii, atunci doar i se va incrementa valoarea atributului numberOfCopies
+deleteBook()
+Va fi o metoda supraincarcata
+Prima varianta va primi doar un paramentru, ISBNCode si va sterge de tot cartea din lista de carti a bibliotecii
+A doua varianta va primi doi paremetrii: ISBNCode si numarul de copii care se vor sterge. In acest caz, cartea nu va fi stearsa din lista de carti a bibliotecii, ci doar se va scadea din numarul total de copii al cartii, numarul de copii primit ca parametru
+listAllBooks()
+va printa detaliile fiecarei carti din lista de carti a bibliotecii
+listBookDetails()
+Va printa detaliile unei singure carti din biblioteca, in functie de codul ISBNCode
+viewBorrowedBooks()
+Va lista codurile ISBNCode ale cartilor imprumutate de un client, in functie de numele clientului primi ca parametru
+Atentie: toate metodele vor trebui sa primeasca ca parametru in plus o biblioteca
+
+
+Sesiunea 7 26.07
+1.Pentru problema 4 din tema de la Sesiunea 4: 12.07, adauga un mecanism de tratare a exceptiilor:
+Creeaza clasa OperationNotSupportedException care va extinde Exception. Exceptia va putea aparea din metodele withdraw() si deposit() si trebuie tratata ori de cate ori poate aparea.
+
+2.Pentru problema 1 din tema de la Sesiunea 5: 16.07 , adauga un mecanism de tratare a exceptiilor:
+Creeaza clasa OperationNotSupportedException care va extinde Exception. Exceptia va putea aparea din metodele changePin(), pay(), si trebuie tratata ori de cate ori poate aparea.
+
+3. Creeaza o aplicatie de gestiune a unei sali de cinema. - nivel mediu
+
+Enunt non-tehnic:
+Clientul tau este o sala de cinema care are nevoie de un sistem de gestiune.
+Exista doua tipuri de utilizatori: admin(care gestioneaza sala) si client (adica cel care vine sa se uite la film)
+Ca si admin, am nevoie sa:
+Creez structura salii (generez un grid format dintr-un anumit numar de linii si coloane)
+Vad statisticile pentru sala mea
+Cate bilete sunt vandute (adica cate locuri sunt ocupate)
+Care este procentajul de locuri ocupate
+Care este suma obtinuta din vanzari in momentul actual
+Care este suma maxima care se poate obtine din vanzari daca se vand toate locurile
+Resetez toate locurile din sala ca fiind libere
+Ca si client, am nevoie sa:
+Vad structura salii (care locuri sunt ocupate si care nu)
+Aflu pretul unui loc de la un anumit rand si coloana
+Daca numarul total de locuri este mai mic decat 60, pretul este 10
+Altfel, daca numarul total de locuri este mai mare decat 60 si biletul selectat este in prima jumatate, pretul este 10, iar daca este in a doua
+Sa cumpar un bilet pentru un loc de la un anumit rand si coloana
+
+Enunt tehnic:
+Creeaza clasa CinemaHall
+Atribute
+numberOfRows
+numberOfCols
+Grid
+Metode
+initializeGridWithEmptySeats()
+Va pune caracterul ‘E’, semnificand “empty” , in fiecare celula din grid. Adica face ca toate locurile sa fie disponibile
+showStatistics()
+Va printa in consola cate bilete sunt vandute (adica cate locuri sunt ocupate), care este procentajul de locuri ocupate, care este suma obtinuta din vanzari pana cum (in functie de cate locuri sunt ocupate in grid), si care este suma maxima care se poate obtine din vanzari
+printGrid()
+Va afisa in consola structura salii de cinema
+getPrice()
+Va afisa pretul pentru un loc de la un anumit rand si coloana.
+Daca numarul total de locuri este mai mic decat 60, pretul este 10
+Altfel, daca numarul total de locuri este mai mare decat 60 si biletul selectat este in prima jumatate, pretul este 10, iar daca este in a doua
+buyTicket()
+Va seta locul de la un anumit rand si coloana ca fiind ocupat
+Metoda va putea arunca o exceptie InvalidSeatException cu mesaje diferite in functie de caz. Daca locul este deja ocupat se va afisa un mesaj corespunzator, iar daca locul nu exista de loc, se va afisa un alt mesaj in exceptie.
+Creeaza clasa Main, unde se testeaza toate operatiile.
+
+
+Sesiunea 12 13.08
+Exercitii usoare colectii
+1.Implementeaza un PhoneBook
+Atribute:
+contacts: o lista de String-uri reprezentand numere de telefon
+blackList: o lista de String-uri reprezentand numere de telefon blocate
+Metode:
+filterContacts()
+Metoda statica care accepta ca si parametri o lista de contacte valide si o lista de contacte blocate
+Trebuie sa stearga din lista de contacte valide toate numerele care se regasesc in lista de contacte blocate
+Returneaza lista de contacte valide modificata
+addToBlackList()
+Metoda non-statica
+Adauga numarul primit ca parametru in lista de numere blocate si il sterge din lista de contacte
+removeFromBlackList()
+Metoda non-statica
+Adauga numarul primit ca parametru in lista de numere si il sterge din lista de numere blocate
+
+Exercitii medii colectii
+2. Implementeaza un spell checker
+Cel mai simplu spell checker este bazat pe o lista de cuvinte cunoscute (un dictionar).
+Daca scrii un text, fiecare cuvant trebuie cautat in lista de cuvinte cunoscute, iar daca nu este gasit, inseamna ca e eronat.
+Implementeaza un astfel de spell checker.
+
+Ce intra in program?
+Pe prima linie utilizatorul introduce numarul de cuvinte din lista de cuvinte cunoscute.
+Apoi, pe cate o linie separata introduce fiecare cuvant din lista de cuvinte cunoscute.
+Apoi, pe o linie, se introduce numarul de linii al textului de verificat.
+Apoi, se introduc exact atatea linii cu text (cuvinte separate prin spatiu).
+
+Ce iese din program?
+Trebuie sa afisam acele cuvinte din text care nu se regasesc in lista de cuvinte cunoscute. Trebuie sa verificam fara sa tinem cont de literele mici si mari. Cuvintele care nu sunt gasite in dictionar nu ar trebui sa fie duplicate, daca le regasim de mai multe ori in text.
+
+Exemplu input:
+
+3
+a
+bb
+cCc
+2
+a bb aab aba
+ccc c bb aaa
+
+Exemplu output:
+c
+aab
+aaa
+aba
+
+
+
+3. Implementeaza un simulator de joc de carti
+Scrie clasa Deck
+Atribute
+Suit - o lista cu tipurile de carti (ex: “trefla”, “rosu”, etc.)
+Rank: o lista cu numerele de carti (ex: “2”, “3”, “as”)
+DeckCards: o lista de carti
+Metode
+GenerateDeck()
+Va popula lista de carti (deckCards) in functie de rank si suit, adica va genera String-uri cu toate combinatiile posibile (ex: “2 de trefla”, “as de rosu”, etc.), pe care le va adauga in deckCards
+suffleDeck()
+Va amesteca lista de carti deckCards (hint: Collections.shuffle())
+Scrie clasa Player
+Atribute
+name
+Metode
+dealHand()
+Primeste ca parametru un deck si numarul de carti care se vor genera intr-o “mana”
+De exemplu, daca numarul de carti este 4, atunci functia va returna o lista de genul: “[2 de trefla, 3 de rosu, 5 de negru, as de rosu]”
+Aceasta lista de fapt este o sublista cu ultimele 4 carti din lista de carti (deckCards) a pachetului (deck) primit ca parametru.  (hint: metoda subList())
+Scrie clasa Main
+Aici se va construi array-ul suit, array-ul rank si se va construi un obiect de tip Deck (care va fi initializat cu suit si rank).
+Se va genera pachetul
+Se vor crea niste jucatori si se vor adauga intr-o lista
+Pentru fiecare jucator din lista, se va amesteca pachetul si se va apela metoda dealHand()
+
+
+Sesiunea 13 16.08
+Exercitii usoare colectii
+1.Scrie o metoda care:
+primeste ca si parametru o lista de numere si returneaza o alta lista de numere formata din numerele din lista primita ca parametru, ridicate la patrat (puteti folosi Math.pow(2) pentru a ridica la patrat)
+Exemplu:
+Input: {2,3,4,5}
+Output: {4,9,16,25}
+
+2.Scrie o metoda care:
+Gaseste cuvantul cel mai lung dintr-o lista de cuvinte (primita ca parametru), si il returneaza
+Exemplu:
+Input: {“ana”, “are”, “mere”}
+Output: “mere”
+
+3.Scrie o metoda care:
+Primeste ca parametru 2 liste de numere si returneaza un set format din numerele pozitive din ambele liste primite ca parametru
+Exemplu:
+Input: {1, -2, 3, 4, 4, -5}, {1, -7, 2}
+Output: {1, 3, 4, 2}
+
+4.Scrie o metoda care:
+Primeste ca si parametru o lista de cuvinte si returneaza lista de cuvinte inversata, cu mentiunea ca lista inversata nu va include cuvintele care au lungimea mai mica decat 3
+Exemplu:
+Input: {“ana”, “nu”, “are”, “mere”}
+Output: {“mere”, “are”, “ana”}
+
+5.Scrie o metoda care:
+Primeste ca parametru doua set-uri si returneaza true daca primul set primit ca parametru este superset al celui de-al doilea set
+Un set “set1” este superset al altui set “set2”, daca “set1” contine toate elementele din “set2”, dar seturile nu sunt egale   - containsAll()
+Exemple:
+Input1: {“ana”, “are”, “mere”}, {“ana”, “are”}
+Output1: true
+Input2: {“ana”, “are”, “mere”}, {“ana”, “are”, “mere”}
+Output2: false
+6.Scrie o metoda care:
+Primeste ca parametru o lista de cuvinte si returneaza de cate ori apare fiecare cuvant in lista
+Exemplu:
+Input: {“ana”, “are”, “mere”, “are”}
+Output: {ana=1, are=2, mere=1}
+
+Exercitii medii colectii
+7. Implementeaza un cifru (encryption - decryption)
+Cel mai simplu cifru este definit de o regula in care fiecare caracter este codificat prin alt caracter.
+
+De exemplu, daca un cifru are la dispozitie:
+Caractere valide:                       {‘a’, ‘e’, ‘i’, ‘o’, ‘u’, ‘c’, ‘n’, ‘d’ ,’b’, ‘s’, ‘l’, ‘m’}
+Codificarile caracterelor valide: {‘s’,  ‘t’, ‘n’, ‘f’, ‘g’, ‘h’, ‘j’,  ‘k’ ,’x’, ‘y’, ‘z’, ‘q’}
+
+Atunci cand incercam sa codificam cuvantul “slab”, vom obtine “yzsx”
+Iar atunci cand incercam sa decodificam “qsjs” vom obtine “mana”.
+
+Asigura operatiile de codificare si decodificare pentru un cuvant, avand la dispozitie lista de caractere valide si lista de caractere codificate.
+
+Creeaza clasa Cypher:
+Atribute:
+inputChars (lista de caractere valide)
+outputChars (lista de caractere codificate)
+Metode:
+initializeCypher()
+Construieste o mapa in care fiecare cheie este un caracter si fiecare valoare este codificarea caracterului
+De exemplu, pentru exemplu de mai sus, mapa va arata asa: {a=s, b=x, c=h, d=k, e=t, i=n, l=z, m=q, n=j, o=f, s=y, u=g}
+encrypt()
+Primeste ca parametru un cuvant si returneaza cuvantul codificat
+decrypt()
+Primeste ca parametru un cuvant si returneaza cuvantul decodificat
+Creeaza clasa Main:
+Aici vor fi apelate metodele cifrului
+
+
+8. Implementeaza o librarie
+Libraria va trebui sa contina o colectie de carti. Fiecare carte are atributele year, title, genre(gen), author.
+Libraria va trebui sa implementeze urmatoarele functionalitati:
+Afisarea cartilor ordonate dupa year
+Afisarea cartilor ordonate dupa autor
+Filtrarea cartilor dupa genre
+Afisarea tuturor cartilor dintr-un anumit gen
+Afisarea tututor genurilor impreuna cu toate cartile din fiecare gen
+Afisarea tuturor genurilor
+Adaugarea unei carti
+Stergerea unei carti
+
+Creeaza clasa Book
+Atribute
+Year
+Title
+Genre
+Author
+Metode
+compareTo (suprascrisa din interfata Comparable)
+Va compara cartile dupa year
+
+Creeaza clasa AuthorComparator
+Va implementa interfata Comparator
+Va suprascrie metoda compare() pentru a compara doua cartile dupa autor (se va apela metoda compareTo() pentru String-uri)
+
+Creeaza clasa BookStore
+Atribute
+Books: va fi un set
+Metode
+addBook()
+Adauga o carte primita ca parametru in set-ul books
+DeleteBook()
+Sterge cartea primita ca parametru din set-ul books
+getAllBooksOrderedByYear()
+Va returna valoarea atributului books
+getAllGenres()
+Va returna un set cu toate genurile existente in colectia de carti
+getAllBooksOrderedByAuthor()
+Va returna un TreeSet care va folosi AuthorComparator pentru a sorta cartile dupa autor
+getAllBooksByGenre()
+Va construi o mapa, in care cheia este un gen, iar valoarea este set-ul de carti care au acel gen
+Va returna aceasta mapa (toate genurile, cu toate cartile din fiecare gen)
+getBooksByGenre()
+Va construi o mapa, in care cheia este un gen, iar valoarea este set-ul de carti care au acel gen
+Va primi ca parametru un gen
+Va returna toate cartile care au acel gen
+
+Sesiunea 14 20.08
+
+Exercitii usoare colectii
+1. Gestiunea angajatilor din companie
+O companie multinationala are o lista de angajati, iar fiecare angajat este caracterizat de: varsta, tara, nume.
+Scrie 3 metode:
+O metoda care returneaza angajatii care au peste 50 de ani, din companie
+O metoda care returneaza o lista cu angajatii din Romania
+O metoda care sorteaza angajatii dupa tara
+O metoda care sorteaza angajatii dupa nume
+O metoda care returneaza o mapa, in care cheia este tara si valoarea este numarul de angajati din acea tara
+O metoda care returneaza o mapa, in care cheia este tara si valoarea o lista cu toti angajatii din acea tara
+
+2. Scrie o aplicatie pentru bursa
+O bursa este structurata sub forma unei mape, cu cheia fiind numele companiei si valoarea fiind pretul unei actiuni la acea companie.
+Exemplu: {Oracle=56, Google=421, Tesla=950}
+Scrie 2 metode:
+O metoda care sa gaseasca compania cu cel mai mare pret al unei actiuni din mapa
+O metoda care sa gaseasca pretul mediu al preturilor actiunilor din mapa
+
+3. Simuleaza un joc
+In acest joc exista un ghiozdan, care contine o lista de lucruri (items). Ghiozdanul este caracterizat de o capacitate maxima (adica cat incape in ghizdan). Fiecare item are un nume si o capacitate (cate unitati de capacitate ocupa acel item, daca va fi adaugat in ghiozdan)
+De exemplu:
+daca ghizdanul are o capacitate maxima cu valoarea 10
+vor putea intra in el 3 item-uri cu capacitatile 4, 3 si 3 (capacitate totala 10)
+dar nu vor putea intra 3 item-uri cu capacitatile 4, 3 si 4 (capacitate totala 11)
+Scrie mai multe metode:
+O metoda care sa adauge un item in ghiozdan (doar daca adaugarea lui nu va depasi capacitatea maxima a ghizdanului)
+O metoda care sa stearga un item din ghiozdan
+O metoda care sa returneze suma capacitatilor item-urilor din ghiozdan
+O metoda care sa returneze cat mai incape in ghizdan (capacitatea maxima a ghizdanului minus capacitatea totala a tuturor produselor din ghiozdan)
+
+4. Gestiunea produselor dintr-un magazin
+Intr-un magazin exista produse, caracterizate de nume, pret, categorie. Categoria este un enum, care are valorile “LACTATE”, “MEZELURI”, “LEGUME&FRUCTE”
+Task-ul este sa grupam produsele dupa categorii.
+Astfel, vom avea clasa Product si enum-ul Category.
+Intr-o clasa Shop, avem atributul products, care este o mapa avand cheia Category (care este un enum) si valoarea o lista de produse (din acea categorie)
+Scrie metodele:
+Add product
+Adauga un produs noi in mapa
+Daca categoria produsului exista deja, se va adauga produsul la acea categorie in mapa, altfel se va crea o noua categorie in care va fi initial produsul adaugat
+getProductByCategory
+Va returna toate produsele dintr-o anumita categorie
+getAllCategories
+Va returna toate categoriile din mapa
+deleteProduct
+Va sterge un produs din mapa
+5. Scrie o metoda care:
+Primeste ca parametru o lista de numere, care are un element duplicat
+Returneaza elementul duplicat
+HINT (alt mod de rezolvare decat cel clasic): metoda add din interfata Set returneaza false, daca nu poate adauga elementul primit ca parametru in set
+
+6. Scrie o metoda care:
+Primeste ca parametru o lista de numere
+Afiseaza cel mai mic si cel mai mare element din lista
+HINT (alt mod de rezolvare decat cel clasic): adauga toate elementele din lista intr-un treeset, apoi apeleaza metodele first() si last() pe acel treeset
+
+
+Exercitii medii colectii
+1. Scrie o metoda care:
+Primeste ca parametrii doua cuvinte si returneaza true, daca cuvintele sunt anagrame.
+Exemple:
+Input1: “race”, “care”
+Output1: true, pentru ca care contine aceleasi litere ca si race, si literele apar de acelasi numar de ori
+Input2:”race”, “carec”
+Output2: false, pentru ca nu contin acelasi litere, de acelasi numar de ori
+
+Exercitii complete colectii (de tip proiect)
+TBD: joc blackjack, manager de budget, proiectele finala de la java fundamentals refactorizate
+
