@@ -6,4 +6,6 @@
  de la utilizator
 - GenerateDeck() nu este de fapt constructorul
 -----------------
-cum ar trebui sa facem cand testam o metoda care implica mai multe date de intrare
+- cum ar trebui sa facem cand testam o metoda care implica mai multe date de intrare map cypher
+- test calculator nu am definit o variabila locala
+- trebuie sa creem clase sau mape
